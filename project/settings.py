@@ -1,3 +1,4 @@
+# flake8: noqa
 """
 Django settings for project project.
 
@@ -88,7 +89,7 @@ DATABASES = {
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator', 
     },
     {
         'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
@@ -122,7 +123,19 @@ STATICFILES_DIRS = (
     BASE_DIR / 'base_static',
 )
 
+# --> colocar no .gitignore
+STATIC_ROOT = BASE_DIR / 'static'  # collectstatic - para configurar o NGINX
+
+MEDIA_URL = 'media/'
+MEDIA_ROOT = BASE_DIR / 'media'
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+try:
+    from project.local_settings import *
+except:
+    ...

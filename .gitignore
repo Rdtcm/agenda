@@ -4,8 +4,10 @@
 *.pyc
 __pycache__
 db.sqlite3
-media
-venv
+media/
+venv/
+static/
+project/local_settings.py
 
 # Backup files # 
 *.bak 
