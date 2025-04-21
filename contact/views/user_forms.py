@@ -14,7 +14,7 @@ def register(request):
         if form.is_valid():
             form.save()
             messages.success(request, 'Usuario registrado com sucesso')
-            return redirect('contact:index')
+            return redirect('contact:login')
 
     return render(
         request,
@@ -50,8 +50,6 @@ def user_update(request):
         )
 
     form.save()
-    messages.success(request, 'Update concluido')
-
     return redirect('contact:user_update')
 
 
@@ -78,6 +76,6 @@ def login_view(request):
 
 
 @login_required(login_url='contact:login')
-def logout_views(request):
+def logout_view(request):
     auth.logout(request)
     return redirect('contact:login')
