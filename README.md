@@ -18,9 +18,9 @@ Projeto de uma agenda desenvolvido com Django. Permite criar, atualizar e deleta
 
 ## 🛠️ Tecnologias Utilizadas
 
-- Python 3.x
-- Django 4.x
-- SQLite (planeja-se utilizar MySQL no deploy)
+- Python 3
+- Django 4
+- SQLite (planejo utilizar MySQL no deploy)
 - HTML, CSS 
 
 ## 🚀 Instalação
