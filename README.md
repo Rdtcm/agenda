@@ -72,3 +72,20 @@ Projeto de uma agenda desenvolvido com Django. Permite criar, atualizar e deleta
 ## 👤 Autor
 
 - [Rdtcm](https://github.com/Rdtcm)
+
+## Formulario de Login
+
+- A tabela de contatos está preenchida com dados fictícios gerados pela biblioteca Faker.
+
+![image](https://github.com/user-attachments/assets/e1535657-990a-4057-a7bf-848256038619)
+
+![image](https://github.com/user-attachments/assets/8cc85771-b52c-44e4-9d1d-c868ceb42a71)
+
+![image](https://github.com/user-attachments/assets/fcfef8bf-fcdb-43d5-8ca2-ff986c29cf15)
+
+![image](https://github.com/user-attachments/assets/d33d94c1-5df5-4180-9a2d-27815d477d08)
+
+
+
+
+
