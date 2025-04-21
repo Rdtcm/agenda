@@ -1,0 +1,18 @@
+{% extends "global/base.html" %}
+
+{% block content %}
+    <div class="form-wrapper">
+
+        <h2>Login</h2>
+
+        {% if user.is_authenticated %}
+            
+        {% else %}
+
+        {% endif %}
+
+        {% include "contact/partials/user_form.html" %}
+    </div>
+{% endblock content %}
+
+
